@@ -9,6 +9,15 @@
 
 <body>
     <h1>投稿一覧</h1>
+
+
+    @foreach($posts as $post)
+    <div style="margin-bottom:50px;">
+        <p>{{ $post->title }}</p>
+        <p>{{ $post->content }}</p>
+    </div>
+    @endforeach
+
 </body>
 
 </html>
